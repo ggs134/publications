@@ -2,7 +2,7 @@
 layout: post
 title:  How does go-ethereum work?
 date:   2018-10-23 00:00:00 +09:00
-author: "박정원(Thomas)"
+author: "박정원(Aiden)"
 categories: ethereum core geth
 tag: [ethereum, core, geth]
 youtubeId : SpfjrEK0qa8
