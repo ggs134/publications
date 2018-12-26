@@ -4,8 +4,8 @@ title:  Devcon 4 Review — Ewasm Project
 date:   2018-11-01 00:00:00 +09:00
 author: "송무복(Jake)"
 categories: ethereum scalability ethereum2.0
-tag: ethereum scalability ethereum2.0
-youtubeId : 
+tag: [ethereum, scalability, ethereum2.0]
+youtubeId :
 slideWebId :
 ---
 * content

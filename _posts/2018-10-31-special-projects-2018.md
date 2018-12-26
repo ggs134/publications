@@ -4,7 +4,7 @@ title:  Ethereum Special Projects in 2018
 date:   2018-10-31 00:00:00 +09:00
 author: "강주형(Jace)"
 categories: ethereum general
-tag: ethereum
+tag: [ethereum, general]
 youtubeId :
 slideWebId :
 ---

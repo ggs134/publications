@@ -4,9 +4,9 @@ title:  Plasma EVM Economics Paper
 date:   2018-11-01 00:00:00 +09:00
 author: "허상범(Danny)"
 categories: ethereum scalability plasma plasmaEVM
-tag: ethereum tokenmics dapp
+tag: [ethereum, tokenmics, dapp]
 youtubeId :
-slideWebId : 
+slideWebId :
 ---
 * content
 {:toc}

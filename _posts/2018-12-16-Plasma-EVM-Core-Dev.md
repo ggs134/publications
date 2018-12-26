@@ -3,8 +3,8 @@ layout: post
 title:  Plasma EVM Core Dev Call
 date:   2018-12-16 00:00:00 +09:00
 author: "Onther"
-categories: ethereum
-tag: ethereum
+categories: ethereum scalability plasma plasmaEVM DevCall
+tag: [ethereum, scalability, plasma, plasmaEVM, DevCall]
 youtubeId : ikIhihHyCK0
 slideWebId :
 ---

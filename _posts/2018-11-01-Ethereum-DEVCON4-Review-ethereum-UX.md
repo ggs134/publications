@@ -4,7 +4,7 @@ title:  Ethereum DEVCON4 Review-Deep dive in to Ethereum UX - 1. UI & User Resea
 date:   2018-11-01 00:00:00 +09:00
 author: "허상범(Danny)"
 categories: ethereum general ux
-tag: ethereum general ux
+tag: [ethereum, general, ux]
 youtubeId :
 slideWebId :
 ---

@@ -4,7 +4,7 @@ title:  Sharding, Casper → Serenity!
 date:   2018-12-17 00:00:00 +09:00
 author: "박주형(Carl)"
 categories: ethereum scalability ethereum2.0
-tag: ethereum scalability ethereum2.0 shasper casper sharding
+tag: [ethereum, scalability, ethereum2.0, shasper, casper, sharding]
 youtubeId : VZ8QuBrCnH0
 slideWebId :
 

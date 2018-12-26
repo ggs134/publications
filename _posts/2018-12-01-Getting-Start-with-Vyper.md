@@ -3,8 +3,8 @@ layout: post
 title:  Getting Start with Vyper
 date:   2018-12-01 00:00:00 +09:00
 author: "황재승(Jason)"
-categories: ethereum
-tag: ethereum
+categories: ethereum SmartContract
+tag: [ethereum, SmartContract, vyper]
 youtubeId :
 slideWebId :
 ---

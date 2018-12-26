@@ -4,7 +4,7 @@ title:  PoC Implementation of Plasma EVM
 date:   2018-10-01 00:00:00 +09:00
 author: "박주형(Carl)"
 categories: ethereum core plasma plasmaEVM
-tag: ethereum core plasma plasmaEVM
+tag: [ethereum, core, plasma, plasmaEVM]
 youtubeId :
 slideWebId :
 ---

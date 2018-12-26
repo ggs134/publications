@@ -4,7 +4,7 @@ title:  Upgradeable smart contract applications using proxy patterns
 date:   2018-11-01 00:00:00 +09:00
 author: "신건우(Thomas)"
 categories: ethereum SmartContract solidity
-tag: ethereum SmartContract solidity
+tag: [ethereum, SmartContract, solidity]
 youtubeId :
 slideWebId :
 ---

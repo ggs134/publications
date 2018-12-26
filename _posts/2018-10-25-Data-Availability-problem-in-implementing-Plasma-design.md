@@ -4,7 +4,7 @@ title:  Data Availability problem in implementing Plasma design Part1
 date:   2018-10-25 00:00:00 +09:00
 author: "송무복(Jake)"
 categories: ethereum scalability plasma
-tag: ethereum scalability plasma DataAvailability
+tag: [ethereum, scalability, plasma, DataAvailability]
 youtubeId :
 slideWebId :
 ---

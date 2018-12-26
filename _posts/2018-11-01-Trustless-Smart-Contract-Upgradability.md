@@ -4,7 +4,7 @@ title:  Trustless Smart Contract Upgradability
 date:   2018-11-01 00:00:00 +09:00
 author: "정순형(Kevin)"
 categories: ethereum SmartContract solidity
-tag: ethereum SmartContract solidity
+tag: [ethereum, SmartContract, solidity]
 youtubeId :
 slideWebId :
 ---

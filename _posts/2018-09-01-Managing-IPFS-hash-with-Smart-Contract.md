@@ -4,8 +4,8 @@ title:  Managing IPFS hash with Smart Contract
 date:   2018-09-01 00:00:00 +09:00
 author: "황재승(Jason)"
 categories: ethereum general IPFS
-tag: ethereum IPFS
-youtubeId : 
+tag: [ethereum, general, IPFS]
+youtubeId :
 slideWebId :
 ---
 * content

@@ -4,7 +4,7 @@ title:  Whisper 노드 구축 및 테스트
 date:   2018-09-01 00:00:00 +09:00
 author: "신진환(Jin)"
 categories: ethereum general whisper
-tag: ethereum whisper
+tag: [ethereum, whisper]
 youtubeId :
 slideWebId :
 ---

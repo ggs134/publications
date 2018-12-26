@@ -4,7 +4,7 @@ title:  A proposal for Data availability Solution of Plasma EVM
 date:   2018-09-01 00:00:00 +09:00
 author: "박정원(Aiden)"
 categories: ethereum scalability plasma plasmaEVM
-tag: ethereum scalability plasma plasmaEVM
+tag: [ethereum, scalability, plasma, plasmaEVM]
 youtubeId :
 slideWebId :
 ---

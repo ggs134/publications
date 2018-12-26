@@ -4,7 +4,7 @@ title:  누구나 쉽게 이해하는 플라즈마EVM
 date:   2018-10-23 00:00:00 +09:00
 author: "정순형(Kevin)"
 categories: ethereum scalability plasma
-tag: ethereum scalability plasma
+tag: [ethereum, scalability, plasma]
 youtubeId :
 slideWebId :
 ---

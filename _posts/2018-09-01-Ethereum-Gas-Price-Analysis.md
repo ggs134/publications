@@ -4,7 +4,7 @@ title:  Ethereum Gas Price Analysis
 date:   2018-09-01 00:00:00 +09:00
 author: "신진환(Jin)"
 categories: ethereum general
-tag: ethereum gas
+tag: [ethereum, gas]
 youtubeId : mlpK8-FsWj0
 slideWebId :
 ---

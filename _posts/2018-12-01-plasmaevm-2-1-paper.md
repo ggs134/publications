@@ -4,7 +4,7 @@ title:  플라즈마 EVM 2.1 - 탈중앙화된 상태를 강제하는 튜링 완
 date:   2018-12-19 00:00:00 +09:00
 author: "박주형(Carl)"
 categories: ethereum scalability plasma plasmaEVM
-tag: ethereum scalability plasma plasmaEVM
+tag: [ethereum, scalability, plasma, plasmaEVM]
 youtubeId :
 slideWebId :
 

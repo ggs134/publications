@@ -4,7 +4,7 @@ title:  Plasma World Map
 date:   2018-11-01 00:00:00 +09:00
 author: "박정원(Aiden)"
 categories: ethereum scalability plasma
-tag: ethereum scalability plasma
+tag: [ethereum, scalability, plasma]
 youtubeId : eMEsMRMMhH8
 slideWebId :
 ---

@@ -4,7 +4,7 @@ title:  Data Availability Solution for Plasma EVM without Confirmation
 date:   2018-09-01 00:00:00 +09:00
 author: "박정원(Aiden)"
 categories: ethereum scalability plasma plasmaEVM
-tag: ethereum scalability plasma plasmaEVM DataAvailability
+tag: [ethereum, scalability, plasma, plasmaEVM, DataAvailability]
 youtubeId :
 slideWebId :
 ---
