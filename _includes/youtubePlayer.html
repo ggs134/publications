@@ -1,9 +1,14 @@
 {% if include.id %}
+
 ---
 # Video
 
-<div class="video-wrapper">
-  <iframe src="https://www.youtube.com/embed/{{ include.id }}" allowfullscreen></iframe>
-</div>
+{% for video in include.id %}
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/{{ video }}" allowfullscreen></iframe>
+  </div>
 ---
+{% endfor %}
+
+
 {% endif %}

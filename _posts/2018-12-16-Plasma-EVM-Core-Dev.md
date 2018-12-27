@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Plasma EVM Core Dev Call
+title:  Plasma EVM Core Dev Call User Activated Fork
 date:   2018-12-16 00:00:00 +09:00
 author: "Onther"
 categories: ethereum scalability plasma plasmaEVM DevCall

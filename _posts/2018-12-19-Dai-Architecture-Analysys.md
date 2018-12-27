@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Dai 아키텍쳐 분석2
+title:  Dai 아키텍쳐 분석
 date:   2018-12-19 00:00:00 +09:00
 author: "송무복(Jake)"
 categories: ethereum dapp
 tag: [ethereum, dapp]
-youtubeId : f7lKvQZMW20
+youtubeId : [3q5mnv4KNgM, f7lKvQZMW20]
 slideWebId :
 ---
 * content

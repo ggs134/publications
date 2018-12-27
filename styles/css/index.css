@@ -6474,6 +6474,18 @@ hr {
   padding: 3px 30px;
   font-size: 90%;
 }
+.sidebar .nav .nav .nav > li > a {
+  padding: 2px 40px;
+  font-size: 90%;
+}
+.sidebar .nav .nav .nav .nav > li > a {
+  padding: 1.5px 55px;
+  font-size: 90%;
+}
+.sidebar .nav .nav .nav .nav .nav > li > a {
+  padding: 1px 70px;
+  font-size: 90%;
+}
 .sidebar .glyphicon {
   font-size: 12px;
   margin-left: 10px;

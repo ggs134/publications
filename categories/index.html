@@ -11,7 +11,9 @@ header: Posts By Category
         <div id="navigation">
         	<h1>Directory</h1>
       		<ul class="nav sidenav">
-				{% if site.categories.first[0] == null %}
+            {% assign tree = site.data.categories.children %}
+            {% include tree.html %}
+				<!-- {% if site.categories.first[0] == null %}
 					{% for category in site.categories %}
 				    	<li><a href="#{{ category }}-ref">
 				    		{{ category | join: "/" }} <span style="color: #999999;" >({{ site.categories[category].size }})</span>
@@ -23,7 +25,7 @@ header: Posts By Category
 				    		{{ category[0] | join: "/" }} <span style="color: #999999;" >({{ category[1].size }})</span>
 				    	</a></li>
 			    	{% endfor %}
-			  	{% endif %}
+			  	{% endif %} -->
           	</ul>
         </div>
       </div>

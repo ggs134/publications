@@ -1,10 +1,18 @@
+data_dir: _data
+
 # Site settings
 name: Onther's Publications
 email: info@onther.io
-author: Zoe Kim
-url: http://www.hifreud.com
-resume_site: http://www.hifreud.com/Resume.io/
+author: Onther Inc.
+url: https://blog.onther.io
+resume_site: https://blog.onther.io
 github: https://github.com/Onther-Tech/
+facebook: https://www.facebook.com/OntherInc/
+linkedin: https://www.linkedin.com/company/onther-tech/
+telegram: https://t.me/onther_blockchain
+twitter: https://twitter.com/ontherInc
+youtube: https://www.youtube.com/c/OntherInc
+blog_github : https://github.com/Onther-Tech/
 baseurl: "/publications"
 description: 이더리움 블록체인 R&D 스타트업 온더의 블로그
 meta_description: 이더리움 블록체인 스타트업 온더의 블로그
