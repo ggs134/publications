@@ -1,4 +1,5 @@
 data_dir: _data
+mathjax: true
 
 # Site settings
 name: Onther's Publications
@@ -12,7 +13,7 @@ linkedin: https://www.linkedin.com/company/onther-tech/
 telegram: https://t.me/onther_blockchain
 twitter: https://twitter.com/ontherInc
 youtube: https://www.youtube.com/c/OntherInc
-blog_github : https://github.com/Onther-Tech/
+blog_github : https://github.com/Onther-Tech/publications
 baseurl: "/publications"
 description: 이더리움 블록체인 R&D 스타트업 온더의 블로그
 meta_description: 이더리움 블록체인 스타트업 온더의 블로그

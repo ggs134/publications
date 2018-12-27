@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  춤추는 철학자의 문제, 검증 게임 그리고 사이드 체인과 데이터 가용성(Dancing philosophers problem, verification game, sidechain and data availability)
+title:  춤추는 철학자의 문제, 검증 게임 그리고 사이드 체인과 데이터 가용성
 date:   2018-10-15 00:00:00 +09:00
 author: "정순형(Kevin)"
 categories: ethereum scalability plasma

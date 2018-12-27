@@ -37,21 +37,21 @@ After URE, two epochs, ORE' _without exit requests_ and NRE', are placed. ORE' i
 
 Undo request prevents future enter request in child chain from being applied. When undo request is finalized in root chain, state change is rewound and the undo request bond is refunded if enter request is not finalized yet. If the enter request is aleady finalized, there is no rewinding and no refund because the undo request is invalid. User shall create undo request only if he is convinced of user-activated fork.
 
--   $r_e$: Enter Request for ORB
+-   $$r_e$$: Enter Request for ORB
 
--   $r_u$: Undo Request of $r_e$ for URB
+-   $$r_u$$: Undo Request of $$r_e$$ for URB
 
--   $r_u$ is created after $r_e$ is in root chain
+-   $$r_u$$ is created after $$r_e$$ is in root chain
 
--   $r_u$ is applied **before** $r_e$ is in child chain
+-   $$r_u$$ is applied **before** $$r_e$$ is in child chain
 
--   **$r_u$ cancels the future $r_e$.**
+-   **$$r_u$$ cancels the future $$r_e$$.**
 
--   $r_u$ \_MUST_ have same $trieKey$ and $trieValue$ as $r_e$, and it is enforced by the RootChain contract
+-   $$r_u$$ \_MUST_ have same $$trieKey$$ and $$trieValue$$ as $$r_e$$, and it is enforced by the RootChain contract
 
-User creates $r_u$ when he want to cancel the previous $r_e$. $r_u$ is applied before $r_e$ if child chain is forked. $r_u$ is invalid if child chain is not forked and $r_e$ is applied.
+User creates $$r_u$$ when he want to cancel the previous $$r_e$$. $$r_u$$ is applied before $$r_e$$ if child chain is forked. $$r_u$$ is invalid if child chain is not forked and $$r_e$$ is applied.
 
-When $r_u$ is finalized, state change, that is already applied in root chain, should be rewound. The finalization means that $r_e$ in child chain cannot be applied anymore, because $r_u$ is prior to $r_e$ by the UAF as opposed to the sequence in root chain. If $r_e$ is already applied in child chain, $r_u$ \_MUST_ not rewind the state change and _MUST_ not refund request bond.
+When $$r_u$$ is finalized, state change, that is already applied in root chain, should be rewound. The finalization means that $$r_e$$ in child chain cannot be applied anymore, because $$r_u$$ is prior to $$r_e$$ by the UAF as opposed to the sequence in root chain. If $$r_e$$ is already applied in child chain, $$r_u$$ _MUST_ not rewind the state change and _MUST_ not refund request bond.
 
 ## Pseudocode: SampleRequestableContract
 

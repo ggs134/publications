@@ -28,13 +28,17 @@
           "name" : "general",
           "children" : [
             {"name" : "whisper", "children" : [""]},
-            {"name" : "ux", "children" : [""]}
+            {"name" : "ux", "children" : [""]},
+            {"name" : "swarm", "children" : [""]}
           ]
         },{
           "name" : "SmartContract",
           "children" : [
             {"name" : "SolEVM", "children" : [""]},
-            {"name" : "solidity", "children" : [""]}
+            {
+              "name" : "solidity",
+              "children" : [{"name": "security", "children":[""]}]
+            }
           ]
         },{
           "name" : "dapp",
@@ -56,6 +60,9 @@
           "chldren" : [""]
         }
       ]
+    },{
+      "name" : "altcoin",
+      "children" : [""]
     }
    ]
 }

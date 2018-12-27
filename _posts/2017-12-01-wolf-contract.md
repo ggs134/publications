@@ -3,8 +3,8 @@ layout: post
 title:  늑대 컨트렉트(Wolf Contract)
 date:   2017-12-01 00:00:00 +09:00
 author: "정순형(Kevin)"
-categories: ethereum
-tag: ethereum
+categories: ethereum SmartContract solidity
+tag: [ethereum, SmartContract, solidity]
 youtubeId :
 slideWebId : 2PACX-1vROgZ2P6YdXXZxU-tcTOYlAt6G5WOfPheC5k-4HYKWE_8mrM88CM9l6Znq0cD3_VQno0TcAnpABUiGn
 ---
