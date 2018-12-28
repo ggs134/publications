@@ -14,7 +14,7 @@ header: Posts By Author
             {% assign posts_by_author = site.posts | group_by:"author" %}
               {% for author in posts_by_author %}
               <li><a href="#{{ author.name }}-ref">
-                {{ author.name | join: "/" }} <span style="color: #999999;" >({{ author.items.size }})</span>
+                {{ author.name | join: "/" }} <span style="color: #999999;" >({{ author.items.size }})
               </a></li>
               {% endfor %}
           	</ul>

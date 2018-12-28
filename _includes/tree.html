@@ -2,7 +2,7 @@
   {% for item in tree %}
     <li>
       <a href="#{{ item.name }}-ref">{{ item.name | join: "/" }}
-        <span style="color: #999999;" >({{ site.categories[item.name].size }})</span>
+        <span style="color: #999999;" >({{ site.categories[item.name].size }})
       </a>
       <ul class="nav">
         {% if item.children[0].name %}

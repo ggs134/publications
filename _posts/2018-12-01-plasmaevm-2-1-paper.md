@@ -171,7 +171,7 @@ Trie의 *임의의 storage 변수* 는 $A_s[k]$ 이고 루트체인과 자식체
 3. 다음 `requestBlock`에는 $NA$가`exitRequest` 절차에 따라 $a_c$에서`applyRequestInChildchain()`함수를 실행하는 트랜잭션이 포함되어야 한다. *3번 과정* 이 올바르게 실행되지 않으면 $Ch$는`computationChallenge`를 할 수 있다.
 4. *3번 과정* 이 제대로 실행되었음에도 트랜잭션이 Revert 된다면, $Ch$는 트랜잭션의 Output을 증거로 하여 `exitChallenge`를 통해 `exitRequest`를 챌린지할 수 있다.
 5. *4번 과정* 에서 챌린지가 발생하지 않는다면, `exitRequest`가 `finalize` 된다. 그러나 만약`exitChallenge`가 타당하다는 것이 증명되면 `exitRequest`는 취소된다.
-6. $U$는 $a_R$에서`finalizeExit()`함수를 호출하여 `exitRequest`를 `finalize` 할 수 있다. 이어 $a_R$은 $a_r$의 `applyRequestInRootchain()` 함수를 호출한다. `applyRequestInRootchain()` 함수가 실행 결과, $A^{r}_{s}[k]$에서 $A^{r}_{s}[k]'$로의 변환이 성공적으로 이루어진다. 컨트랙트 개발자는 $a_r$의`applyRequestInRootchain ()` 함수가 throw되면 안된다는 것을 **반드시** 확인 해야한다. 이러한 변환은 반드시 이루어져야 하며, Exit의 유효성은`exitChallenge`에 대한 증명으로 사용될 수 있는 $a_c$의`applyRequestInChildChain()`함수에서 확인 할 수 있다.
+6. $U$는 $a_R$에서`finalizeExit()`함수를 호출하여 `exitRequest`를 `finalize` 할 수 있다. 이어 $a_R$은 $a_r$의 `applyRequestInRootchain()` 함수를 호출한다. `applyRequestInRootchain()` 함수가 실행 결과, $$A^{r}_{s}[k]$$ 에서 $$A ^{r}_{s}[k]'$$ 로의 변환이 성공적으로 이루어진다. 컨트랙트 개발자는 $a_r$ 의`applyRequestInRootchain ()` 함수가 throw되면 안된다는 것을 **반드시** 확인 해야한다. 이러한 변환은 반드시 이루어져야 하며, Exit의 유효성은`exitChallenge`에 대한 증명으로 사용될 수 있는 $a_c$의`applyRequestInChildChain()`함수에서 확인 할 수 있다.
 
 <br>
 
@@ -527,10 +527,11 @@ User-activated fork 방식은 DA문제가 생길 경우 누구나 마지막으�
 <br>
 
 ### Dynamic cost mechanism
+
 우리는 이러한 공격을 막기 위해 User-activated fork에 대해 동적 비용 메커니즘을 두었다. 그 설계 목표는 다음과 같다.
 
-**1. URB의 제출이 공격의도일 확률에 가깝다면 많은 비용이 부과되어야 하고, DA문제상황에 대한 탈출의 용도일 확률에 가깝다면 낮은 비용이 부과되어야 한다.
-2. 재정렬을 발생시키는 URB의 제출 횟수는 가능한 최소화 되어야 한다.**
+1. **URB의 제출이 공격의도일 확률에 가깝다면 많은 비용이 부과되어야 하고, DA문제상황에 대한 탈출의 용도일 확률에 가깝다면 낮은 비용이 부과되어야 한다.**
+2. **재정렬을 발생시키는 URB의 제출 횟수는 가능한 최소화 되어야 한다.**
 
 DA문제가 해결하기 어려운 이유는 자식 체인에서 실제로 DA문제가 발생했는지의 여부를 판단하는 것이 매우 어렵기 때문이다. 따라서 Plasma EVM에서는 첫번째 원칙처럼 DA문제의 발생여부에 대해 확률의 측면에서 접근하고자 한다.
 
@@ -558,8 +559,7 @@ $N_{ERU}$ : URB에 포함된 ERU의 수**
 
 우리는 다음과 같이 앞서 제시한 조건을 만족하는 비용함수를 간단하게 도출할 수 있다.
 
-> [name=Aiden Park] TODO: 그림 가운데 정렬...
->
+
 ![](https://i.imgur.com/qxbifiz.png)
 *<center>그림 11 : Cost function of submitting URB</center>*
 
@@ -600,7 +600,9 @@ ERU를 통해 Exit하는데 소모되는 비용은 *그림 14* 와 같다. $C_{E
 
 
 ## Issues
+
 ### Resolved issues
+
 #### 1. 특정 사용자에게만 block withholding attack을 하는 경우
 UAF 모델은 사용자들이 포크에 대한 비용을 분담하는 형태라고 볼 수 있다. 따라서 오퍼레이터가 특정 사용자만을 대상으로 Data withholding attack을 하는 경우 해당 사용자는 홀로 많은 비용을 부담하여 URB를 통해 exit을 해야 하는 상황이 발생할 수 있다. 하지만 이는 풀노드를 작동시키고 있는 다른 사용자가 P2P네트워크를 통해 해당 사용자에게 블록을 전달해주는 것으로 쉽게 해결이 가능하다. 정직한 사용자라면 본인이 언제든지 오퍼레이터의 공격대상이 될 수 있다. 때문에 다른 사용자들과 P2P연결을 유지하면서 블록을 공유할 유인이 충분하다고 볼 수 있다. 따라서 위와 같은 공격형태는 그 효과를 쉽게 잃을 가능성이 매우 높다.
 

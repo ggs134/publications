@@ -17,7 +17,7 @@ slideWebId :
 # 철학자의 데브콘4 참관기
 
 ![](https://cdn-images-1.medium.com/max/800/1*t32qdzUKoOzF4Bm4Se5pPg.jpeg)
-<span class="figcaption_hack">행사장 거울 앞에서 셀피</span>
+*<center>행사장 거울 앞에서 셀피</center>*
 
 전 세계 이더리안(Etherian)들의 축제, 2018.10.30–11.2일 체코 프라하에서 개최된 데브콘4에 다녀왔습니다. 프라하 현지에서
 수많은 주제로 세션이 열렸습니다만, 모두를 다루기보다는 인상 깊었던 주제를 중심으로 간단히 참관기를 남기려 합니다.
@@ -28,7 +28,7 @@ slideWebId :
 *****
 
 ![](https://cdn-images-1.medium.com/max/800/1*Iop82I2K9BT_Szp0mGeibA.png)
-<span class="figcaption_hack">Ali Azam의 Trustless Smart Contract Upgradability 워크아웃. 인도식 영어발음이라 약간 힘들었다 ㅠㅠ</span>
+*<center>Ali Azam의 Trustless Smart Contract Upgradability 워크아웃. 인도식 영어발음이라 약간 힘들었다 ㅠㅠ</center>*
 
 스마트 컨트렉트의 업그레이드에 관한 2시간 짜리 실습 워크아웃이 있었습니다. 사실 큰 기대를 하지는 않았습니다. 업그레이드 가능한 스마트
 컨트렉트의 경우 [Proxy패턴](https://blog.zeppelinos.org/proxy-patterns/)이라는 컨트렉트 프로그래밍
@@ -76,7 +76,7 @@ slideWebId :
 1.  업그레이드를 할 수 있도록 디자인 패턴을 적용(로직과 데이터 분리, delegateCall기반의 접근)
 
 ![](https://cdn-images-1.medium.com/max/800/1*8T29WBhIvrabu3--Ty5yMA.png)
-<span class="figcaption_hack">이게 앞에서 말한 Trustless Upgradability에 관한 아이디어입니다. 중요한 개념이에요.</span>
+*<center>이게 앞에서 말한 Trustless Upgradability에 관한 아이디어입니다. 중요한 개념이에요.</center>*
 
 가장 중요한 개념중에 하나입니다. 업그레이드를 위해서 많은 수의 트랜잭션이 필요하다면 그건 그만큼 **탈중앙화(Trustless)** 되어 있는
 것이고, 적은 수의 트랜잭션으로도 업그레이드 가능하다면 그건 그만큼 **중앙화(Trusted)** 되어 있는 것이겠죠.
@@ -98,16 +98,16 @@ slideWebId :
 # Task1 : 컨트랙트 재배포를 통한 업그레이드
 
 ![](https://cdn-images-1.medium.com/max/800/1*ySNHd3rg5REILHRK1ahfIA.png)
-<span class="figcaption_hack">새로운 컨트랙트를 배포하고, 유저들에게 그냥 새로운것을 쓰라고 한다.</span>
+*<center>새로운 컨트랙트를 배포하고, 유저들에게 그냥 새로운것을 쓰라고 한다.</center>*
 
 요즘 토큰 컨트랙트에 문제가 생기면 가장 많이 쓰는 방법입니다.
 
 ![](https://cdn-images-1.medium.com/max/800/1*Nh4rYww4A0HJd73w6ixNvg.png)
-<span class="figcaption_hack">불친절한 가이드라인..</span>
+*<center>불친절한 가이드라인..</center>*
 
 가이드라인도 줍니다.(내용이 미국식 교과서 방식이네요^^;;) 이걸보고 “응??” 잠깐 멍때리다가 다시 정신차리고 코딩했습니다.
 
-<span class="figcaption_hack">이정도는 간단히 짜버립시다.</span>
+*<center>이정도는 간단히 짜버립시다.</center>*
 
 Score컨트렉트의 setScore() 함수에 대한 개선이 필요하면 유저들에게 ScoreV2를 새로 배포해서 쓰라고 이야기 하면 됩니다.
 간단합니다.
@@ -126,11 +126,11 @@ Score컨트렉트의 setScore() 함수에 대한 개선이 필요하면 유저�
 PosController라는걸](https://github.com/Onther-Tech/pos-controller) 만들기도 했습니다.
 
 ![](https://cdn-images-1.medium.com/max/800/1*KcUC-cvnbp8F_REG0F4x2A.png)
-<span class="figcaption_hack">문제 참 쉽게낸다</span>
+*<center>문제 참 쉽게낸다</center>*
 
 요구사항에 맞춰 코딩을 하면 다음과 같습니다.
 
-<span class="figcaption_hack">V1, V2는 모두 ScoreStorage를 참조하고 있다</span>
+*<center>V1, V2는 모두 ScoreStorage를 참조하고 있다</center>*
 
 스코어 정보가 ScoreStorage에 저장되어 있어, setScore()함수의 로직이 변경되어도 기존 스코어 정보는 남아있습니다.
 
@@ -146,42 +146,42 @@ Task3이 Task2와 다른점은 스토리지 컨트랙트에 저장할 상태변�
 되죠. **스토리지에 저장할 수 있는 상태변수의 식별자 통해 저장할 수 있는 데이터의 범주를 넓혀주는 효과** 가 있습니다.
 
 ![](https://cdn-images-1.medium.com/max/800/1*im7vd_bhsBfuR_4NXG3WBA.png)
-<span class="figcaption_hack">현장에서 라이브코딩까지 하는Ali Azam</span>
+*<center>현장에서 라이브코딩까지 하는Ali Azam</center>*
 
-<span class="figcaption_hack">이렇게 짜면 됩니다^^</span>
+*<center>이렇게 짜면 됩니다^^</center>*
 
 # Task4: 프록시 패턴을 통한 업그레이드 가능한 컨트랙트
 
 4번 실습을 하기 위해서는 몇가지 사전지식이 필요합니다.
 
 ![](https://cdn-images-1.medium.com/max/800/1*TbbcKxtbKOZvR6kP0otBdg.png)
-<span class="figcaption_hack">이더리움의 실행모델에서 스택, 메모리, 스토리지</span>
+*<center>이더리움의 실행모델에서 스택, 메모리, 스토리지</center>*
 
 EVM은 스택기반의 가상머신이자 컴퓨터로 볼 수 있고, 내부적으로 컴퓨터의 램과 같은 역할을 하는 메모리(Memory)와 저장공간 역할을 하는
 스토리지(Storage)가 있습니다.
 
 ![](https://cdn-images-1.medium.com/max/800/1*uisf3EmzefW1e10x48wOIQ.png)
-<span class="figcaption_hack">DelegateCall..드디어 나옴</span>
+*<center>DelegateCall..드디어 나옴</center>*
 
 프록시 패턴(Proxy Pattern)을 사용하기 위한 핵심개념인 DelegateCall에 대한 설명이 이어집니다. 컨트랙트의 스토리지를
 이용해서 다른 컨트랙트를 호출해 기능을 사용하는 것을 뜻하고, mgs.sender와 msg.value는 호출과정에서 같이 전달됩니다.
 
 ![](https://cdn-images-1.medium.com/max/800/1*9jcoV75hjGc3V61gOb1kag.png)
-<span class="figcaption_hack">Magic code</span>
+*<center>Magic code</center>*
 
 프록시 컨트랙트를 쓰기 위한 솔리디티 어셈블리 매직코드입니다. 이코드에 대한 상세한 설명은 [제플린의 블로그
 글](https://blog.zeppelinos.org/proxy-patterns/) 참조.
 
 ![](https://cdn-images-1.medium.com/max/800/1*OZ9zNQA9Rscl6Ba-YY0XsQ.png)
-<span class="figcaption_hack">이번에 만들건 이거다.</span>
+*<center>이번에 만들건 이거다.</center>*
 
 녹색은 바뀌지 않는 부분이고, 붉은색은 업그레이드가 이뤄지는 부분입니다. 구조적으로 Proxy컨트랙트는 Contract A를
 delegateCall하게 되죠.
 
 ![](https://cdn-images-1.medium.com/max/800/1*ts6oX-BriJ0Tm5Ps6y8gxQ.png)
-<span class="figcaption_hack">실습 시작~!</span>
+*<center>실습 시작~!</center>*
 
-<span class="figcaption_hack">noi가뿐하게 짜줍니다.</span>
+*<center>noi가뿐하게 짜줍니다.</center>*
 
 Proxy컨트랙트의 setImplementation() 함수를 통해서 V1에서 V2로 기능이 업그레이드 된 컨트랙트의 주소를 새롭게 지정해 주면
 됩니다.
@@ -201,7 +201,7 @@ delegateCall해서 Score가 상속한 ScoreStorage의 값을 바꿉니다.
 있듯이 address형의 implementation 변수는 처음 선언되었기 때문에 0x00의 스토리지 키를 통해서 변수에 접근하고, 두번째
 선언된 uint256형의 number변수는 0x01을 통해 접근하게 됩니다.
 
-<span class="figcaption_hack">올바른 구현과 올바르지 않은 구현</span>
+*<center>올바른 구현과 올바르지 않은 구현</center>*
 
 올바른 구현의 경우 39:40 라인이 모두 들어갑니다. score변수와 lastPersonToSetTheScore변수는 스토리지 키 값을 각각
 0x00, 0x01을 쓰게되죠. 따라서 65라인에서 setScore를 호출하지 않아도 lastPersonToSetTheScore변수의 값은 이미
@@ -235,7 +235,7 @@ impl이라는 위치에 값을 기록해서 사용하고, 이를 불러서 쓸 �
 이전까지는 전부 업그레이드 가능한 컨트랙트를 만드는 기법(technique)에 관한 내용이었습니다. 이를 탈중앙화시키는건 조금 다른 문제죠.
 
 ![](https://cdn-images-1.medium.com/max/800/1*6H_C4pqqrBsCHuyCMW5REA.png)
-<span class="figcaption_hack">프록시를 탈중앙화 시켜봅시다!</span>
+*<center>프록시를 탈중앙화 시켜봅시다!</center>*
 
 * **프록시 컨트랙트를 탈중앙화 시키는 방법은 유저들에게 어떠한 버전이든 택할 수 있는 자유를 주는 것이다**
 * **프록시 컨트랙트는 다른 외부 계정(external account)이나 컨트랙트 계정에 의해 통제(operate)되어서는 안된다.**
@@ -246,7 +246,7 @@ choose)를 부여하는 것이죠.
 
 ![](https://cdn-images-1.medium.com/max/800/1*z86JEJhLvfRz4bLCjxtnWA.png)
 
-<span class="figcaption_hack">프록시는 delegateCall을 하기 전에 Registry를 체크한다</span>
+*<center>프록시는 delegateCall을 하기 전에 Registry를 체크한다</center>*
 
 프록시 컨트랙트는 delegateCall을 호출하기 전에 Registry에 담긴 정보를 한번 확인합니다. 여기서 확인하는 정보는
 `누가`호출하느냐는 것이죠. 예를들어 유저 A는 V1을 호출하고 유저 B는 V2를 호출하게 됩니다. 유저 A는 V1을 택했고, 유저 B는 V2를
@@ -256,7 +256,7 @@ choose)를 부여하는 것이죠.
 
 ![](https://cdn-images-1.medium.com/max/800/0*g6O-MbwOOweUGvV6.jpg)
 
-<span class="figcaption_hack">Registry를 통해 유저별로 다른 로직을 delegateCall하게 된다.</span>
+*<center>Registry를 통해 유저별로 다른 로직을 delegateCall하게 된다.</center>*
 
 
 # 결론 및 사견
@@ -285,12 +285,6 @@ choose)를 부여하는 것이죠.
 앉아서 많은 생각에 잠기게 했습니다. 모두가 함께 고민해볼만한 좋은 주제인 것 같습니다.
 
 지금까지 긴 글 읽어주셔서 감사합니다.
-
-* [Devcon4](https://medium.com/tag/devcon4?source=post)
-* [Ethereum](https://medium.com/tag/ethereum?source=post)
-* [Smartcontract](https://medium.com/tag/smart-contracts?source=post)
-* [Upgradability](https://medium.com/tag/upgradability?source=post)
-* [Trustless](https://medium.com/tag/trustless?source=post)
 
 
 # Related links

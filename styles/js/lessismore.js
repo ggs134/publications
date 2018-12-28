@@ -49,7 +49,7 @@
         for(var i=0; i< headers.length;i++){
           
           var header = headers[i];
-          $(header).html($(header).html() + '<span class="anchor-target" id="' + header.id + '"></span>' +
+          $(header).html($(header).html() + '<span class="anchor-target" id="' + header.id + '">' +
             '<a href="#' + header.id + '" name="' + header.id + '" class="anchor glyphicon glyphicon-link"></a>');
           $(header).removeAttr('id');
         }

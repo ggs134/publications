@@ -7,6 +7,7 @@ categories: ethereum scalability plasma plasmaEVM DevCall
 tag: [ethereum, scalability, plasma, plasmaEVM, DevCall]
 youtubeId : ikIhihHyCK0
 slideWebId :
+use_math : true
 ---
 * content
 {:toc}
